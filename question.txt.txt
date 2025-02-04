@@ -1,10 +1,34 @@
-1.git
-	abdallah ma aider a faire le git push 
-	avec la commande git push
-	
+1)Initialisation avec Git
 
-2.git Hub
-	pas trouver donc chat gpt
-	pas trouver donc chat gpt
-	pas trouver donc chat gpt
-	forkforkfork
+J'ai commencé par initialiser un dépôt Git dans le répertoire de mon portfolio en exécutant la commande suivante :
+git init
+Ensuite, j'ai ajouté tous les fichiers présents dans le dossier et effectué un commit avec le message "Portfolio initialisation" :
+git add .
+git commit -m "Portfolio initialisation"
+
+	1)Création du dépôt sur GitHub
+
+	Avec l'aide d'Omar, j'ai créé un dépôt vide sur GitHub. Ensuite, j'ai lié mon dépôt local à celui sur GitHub en utilisant les commandes suivantes :
+	git remote add origin https://github.com/VOTRE-USERNAME/portfolio.git
+	git branch -M main
+	git push -u origin main
+	Après cela, j'ai vérifié sur GitHub, et tous les fichiers du portfolio étaient bien présents, accompagnés du commit initial.
+
+	2)Collaboration avec mon binôme
+
+		Grâce à l'assistance de ChatGPT, mon binôme m'a attribué les droits d'accès à son dépôt via les paramètres de GitHub. Pour récupérer son projet, j'ai cloné son dépôt avec la commande suivante :
+		git clone https://github.com/USERNAME-DU-BINOME/portfolio.git
+		Ensuite, je me suis déplacé dans le répertoire du projet avec :
+		cd portfolio
+		J'ai créé une nouvelle branche nommée "documentation" et suis passé dessus :
+		git checkout -b documentation
+		Puis, j'ai ajouté un fichier README.md qui contenait le texte suivant :
+		# Portfolio
+		Ce projet contient le code source du portfolio de Bercan
+		Après avoir ajouté et effectué le commit de ce fichier, j'ai exécuté :
+		git add README.md
+		git commit -m "Ajout du README"
+		Ensuite, j'ai poussé la branche "documentation" sur GitHub avec :
+		git push origin documentation
+		Sur GitHub, j'ai vérifié que la branche avait bien été créée et que le fichier README.md était visible.
+		J'ai alors créé une Pull Request pour demander la fusion avec la branche principale "main". Mon binôme a validé cette PR et l'a fusionnée, ce qui a laissé la branche "documentation" affichée sur le dépôt.
